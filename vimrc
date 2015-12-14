@@ -370,11 +370,6 @@ nnoremap <leader>gco          :Gcheckout
 nnoremap <leader>gci          :Gcommit
 
 " }}}
-" Powerline configuration {{{
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:Powerline_symbols = 'compatible'
-
-" }}}
 " NERDTree configuration {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeIgnore = ['\~$','\.git']
