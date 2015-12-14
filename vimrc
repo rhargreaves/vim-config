@@ -262,13 +262,18 @@ noremap <leader>sa             zg
 noremap <leader>s?             z=
 
 " }}}
+" Airline {{{
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_right_sep=''
+let g:airline_left_sep=''
+
+" }}}
 " Help shortcuts {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 inoremap <F1>             <ESC>
 nnoremap <F1>             :above help <c-r>=expand("<cword>")<cr><cr>
 vnoremap <F1>             <ESC>
 cmap help                 :above help
-
 
 " }}}
 " Remap annoying default keymaps {{{
