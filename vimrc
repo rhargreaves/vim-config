@@ -47,6 +47,9 @@ set encoding=utf-8        " Default to UTF-8
 set scrolloff=2           " start scrolling 2 lines from screen edge
 syntax on                 " Enable syntax highlighting
 colorscheme badwolf       " Make it pretty
+set background=dark
+"colorscheme distinguished
+
 set hidden                " Hide rather than close abandoned buffers
 set backspace=2           " Make backspace work for indent, eol, start
 set shortmess=atI         " Shorten the large interruptive prompts
