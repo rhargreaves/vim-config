@@ -55,9 +55,6 @@
 [submodule "bundle/rspec"]
 	path = bundle/rspec
 	url = https://github.com/skwp/vim-rspec.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
