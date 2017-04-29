@@ -1,12 +1,15 @@
-" Bootstrap plugins and filetypes {{{
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible            " Turn off vi compatibility mode
-filetype off                " Interferes with Pathogen, so turn off
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 call pathogen#infect()      " Load all the plugins
 call pathogen#helptags()    " Generate help tags for plugins
 filetype on                 " Reenable filetype
 filetype indent on
 filetype plugin on
+
+Bundle 'gmarik/vundle'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " }}}
 " Bundled plugins {{{
