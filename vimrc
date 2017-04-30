@@ -29,7 +29,6 @@ set history=1000          " Increase command history size
 set ruler                 " Show the ruler
 set incsearch             " Incomplete search matches
 set hlsearch              " Keep search highlight after complete
-set relativenumber        " Show line numbers
 set number
 set showmode              " Show the current mode in the last line
 set showcmd               " Show the current command in the last line
@@ -228,7 +227,7 @@ cnoremap <C-e> <End>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! ToggleNumberingMode()
 	if (&rnu == 1)
-		set number
+		set norelativenumber
 	else
 		set relativenumber
 	endif
