@@ -105,54 +105,6 @@ set backupdir=~/.vim/tmp/backup,~/tmp,/tmp
 set directory=~/.vim/tmp/swap/,~/tmp,/tmp
 set noswapfile
 
-" }}}
-" Indentation and whitespace {{{
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Automate resizing tabs
-" See http://vimcasts.org/episodes/tabs-and-spaces/
-command! -nargs=* Stab call Stab()
-
-function! Stab()
-	let l:tabstop = 1 * input('set tabstop = softtabstop = shiftwidth = ')
-	if l:tabstop > 0
-		let &l:sts = l:tabstop
-		let &l:ts = l:tabstop
-		let &l:sw = l:tabstop
-	endif
-	call SummarizeTabs()
-endfunction
-
-function! SummarizeTabs()
-	try
-		echohl ModeMsg
-		echon 'tabstop='.&l:ts
-		echon ' shiftwidth='.&l:sw
-		echon ' softtabstop='.&l:sts
-		if &l:et
-			echon ' expandtab'
-		else
-			echon ' noexpandtab'
-		endif
-	finally
-		echohl None
-	endtry
-endfunction
-
-function! <SID>StripTrailingWhitespaces()
-	" Save the last search and cursor position
-	let _s=@/
-	let l = line(".")
-	let c = col(".")
-
-	" Remove trailing whitespace characters
-	%s/\s\+$//e
-
-	" Reset last search position
-	let @/=_s
-	" Put the cursor back where it was
-	call cursor(l, c)
-endfunction
-
 "Shortcut mapping
 noremap <leader><tab> :Stab<cr>
 set cindent                         " Indent new lines to same level as last
@@ -435,6 +387,8 @@ endif
 " CtrlP configuration {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ctrlp_open_new_file = 1         " Open new files in tabs
+let g:ctrlp_dotfiles = 1
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " }}}
 " Enable toggling of the quickfix and errors window {{{
