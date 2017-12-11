@@ -112,3 +112,6 @@
 [submodule "bundle/vim-z80"]
 	path = bundle/vim-z80
 	url = git@github.com:magomsk/vim-z80.git
+[submodule "bundle/vim-ps1"]
+	path = bundle/vim-ps1
+	url = https://github.com/PProvost/vim-ps1.git
