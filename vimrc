@@ -8,3 +8,4 @@ Plug 'vim-airline/vim-airline'
 call plug#end()
 colorscheme badwolf
 :set number relativenumber
+:set mouse=a
