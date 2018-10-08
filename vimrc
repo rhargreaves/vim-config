@@ -6,6 +6,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'sjl/badwolf'
 Plug 'vim-airline/vim-airline'
 Plug 'smerrill/vcl-vim-plugin'
+Plug 'omnisharp/omnisharp-vim'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 colorscheme badwolf
 :set number relativenumber
