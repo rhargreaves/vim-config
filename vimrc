@@ -8,9 +8,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'omnisharp/omnisharp-vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 set tabstop=4
 set shiftwidth=4
+map <F2> :NERDTreeToggle<CR>
 colorscheme badwolf
 :set number relativenumber
 :set mouse=a
