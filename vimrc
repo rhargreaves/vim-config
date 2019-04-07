@@ -9,11 +9,13 @@ Plug 'smerrill/vcl-vim-plugin'
 Plug 'omnisharp/omnisharp-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rhysd/vim-clang-format'
+Plug 'justinmk/vim-syntax-extra'
 call plug#end()
 set tabstop=4
 set shiftwidth=4
-map <F2> :NERDTreeToggle<CR>
-colorscheme badwolf
-:set number relativenumber
+:set number
 :set mouse=a
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+colorscheme badwolf
+map <F2> :NERDTreeToggle<CR>
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:clang_format#auto_format = 1
