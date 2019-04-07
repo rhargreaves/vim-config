@@ -13,9 +13,11 @@ Plug 'justinmk/vim-syntax-extra'
 call plug#end()
 set tabstop=4
 set shiftwidth=4
-:set number
-:set mouse=a
+set number
+set mouse=a
+set ttymouse=xterm2
 colorscheme badwolf
 map <F2> :NERDTreeToggle<CR>
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_show_hidden = 1
 let g:clang_format#auto_format = 1
