@@ -11,6 +11,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'justinmk/vim-syntax-extra'
 Plug 'valloric/youcompleteme'
+Plug 'Chiel92/vim-autoformat'
 call plug#end()
 set tabstop=4
 set shiftwidth=4
@@ -23,3 +24,5 @@ map <F12> :YcmCompleter GoTo<CR>
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_show_hidden = 1
 let g:clang_format#auto_format = 1
+let g:ycm_max_diagnostics_to_display = 500
+au BufWrite * :Autoformat
