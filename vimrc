@@ -25,4 +25,7 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|sv
 let g:ctrlp_show_hidden = 1
 let g:clang_format#auto_format = 1
 let g:ycm_max_diagnostics_to_display = 500
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
 au BufWrite * :Autoformat
