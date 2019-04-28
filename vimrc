@@ -18,6 +18,7 @@ set shiftwidth=4
 set number
 set mouse=a
 set ttymouse=xterm2
+set report=0
 colorscheme badwolf
 map <F2> :NERDTreeToggle<CR>
 map <F12> :YcmCompleter GoTo<CR>
