@@ -12,6 +12,7 @@ Plug 'rhysd/vim-clang-format'
 Plug 'justinmk/vim-syntax-extra'
 Plug 'valloric/youcompleteme'
 Plug 'Chiel92/vim-autoformat'
+Plug 'nvie/vim-flake8'
 call plug#end()
 set tabstop=4
 set shiftwidth=4
@@ -19,6 +20,8 @@ set number
 set mouse=a
 set ttymouse=xterm2
 set report=0
+set list
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 colorscheme badwolf
 map <F2> :NERDTreeToggle<CR>
 map <F12> :YcmCompleter GoTo<CR>
@@ -30,3 +33,4 @@ let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
 au BufWrite * :Autoformat
+autocmd BufWritePost *.py call flake8#Flake8()
