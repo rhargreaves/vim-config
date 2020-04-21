@@ -13,6 +13,7 @@ Plug 'justinmk/vim-syntax-extra'
 Plug 'valloric/youcompleteme'
 Plug 'Chiel92/vim-autoformat'
 Plug 'nvie/vim-flake8'
+Plug 'pprovost/vim-ps1'
 call plug#end()
 set tabstop=4
 set shiftwidth=4
