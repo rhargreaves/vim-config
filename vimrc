@@ -14,6 +14,7 @@ Plug 'valloric/youcompleteme'
 Plug 'Chiel92/vim-autoformat'
 Plug 'nvie/vim-flake8'
 Plug 'pprovost/vim-ps1'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 set tabstop=4
 set shiftwidth=4
@@ -23,7 +24,7 @@ set ttymouse=xterm2
 set report=0
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
-colorscheme badwolf
+colorscheme nord
 map <F2> :NERDTreeToggle<CR>
 map <F12> :YcmCompleter GoTo<CR>
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
