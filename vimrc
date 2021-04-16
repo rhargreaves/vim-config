@@ -15,6 +15,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'nvie/vim-flake8'
 Plug 'pprovost/vim-ps1'
 Plug 'arcticicestudio/nord-vim'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 set tabstop=4
 set shiftwidth=4
