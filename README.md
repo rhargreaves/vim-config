@@ -6,6 +6,6 @@ My Vim configuration
 
 ```bash
 $ git clone git@github.com:rhargreaves/vim-config.git
-$ ln -s vim-config ~/.vim 
+$ ln -s $(pwd)/vim-config ~/.vim 
 $ ln -s ~/.vim/vimrc ~/.vimrc
 ```
