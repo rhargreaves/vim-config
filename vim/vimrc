@@ -1,20 +1,14 @@
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'nvie/vim-flake8'
 Plug 'kien/ctrlp.vim'
 Plug 'sjl/badwolf'
 Plug 'vim-airline/vim-airline'
 Plug 'smerrill/vcl-vim-plugin'
-Plug 'omnisharp/omnisharp-vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'rhysd/vim-clang-format'
 Plug 'justinmk/vim-syntax-extra'
-Plug 'valloric/youcompleteme'
 Plug 'Chiel92/vim-autoformat'
-Plug 'nvie/vim-flake8'
-Plug 'pprovost/vim-ps1'
-Plug 'arcticicestudio/nord-vim'
+Plug 'arcticicestudio/nord-vim', { 'branch': 'main' }
 Plug 'hashivim/vim-terraform'
 call plug#end()
 set tabstop=4
@@ -36,4 +30,3 @@ let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
 au BufWrite * :Autoformat
-autocmd BufWritePost *.py call flake8#Flake8()
