@@ -16,6 +16,16 @@ return {
         theme = "duskfox",
         globalstatus = true,
       },
+      sections = {
+        lualine_x = {
+          function()
+            return vim.bo.endofline and "" or "↵̸"
+          end,
+          "encoding",
+          "fileformat",
+          "filetype",
+        },
+      },
     },
   },
 }
