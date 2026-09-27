@@ -1,10 +1,10 @@
 return {
   {
-    "arcticicestudio/nord-vim",
+    "EdenEast/nightfox.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme("nord")
+      vim.cmd.colorscheme("duskfox")
     end,
   },
   {
@@ -13,7 +13,7 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
       options = {
-        theme = "nord",
+        theme = "duskfox",
         globalstatus = true,
       },
     },
