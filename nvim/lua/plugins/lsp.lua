@@ -21,7 +21,7 @@ return {
       "saghen/blink.cmp",
     },
     opts = {
-      ensure_installed = { "lua_ls", "terraformls" },
+      ensure_installed = { "lua_ls", "rust_analyzer", "terraformls" },
     },
     config = function(_, opts)
       vim.lsp.config("*", {
@@ -37,6 +37,7 @@ return {
       })
       require("mason-lspconfig").setup(opts)
       vim.lsp.enable("clangd")
+      vim.lsp.enable("rust_analyzer")
     end,
   },
 }

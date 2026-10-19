@@ -5,6 +5,7 @@ local formatters_by_ft = {
   javascriptreact = { "prettierd", "prettier", stop_after_first = true },
   json = { "prettierd", "prettier", stop_after_first = true },
   lua = { "stylua" },
+  rust = { "rustfmt" },
   terraform = { "terraform_fmt" },
   typescript = { "prettierd", "prettier", stop_after_first = true },
   typescriptreact = { "prettierd", "prettier", stop_after_first = true },
