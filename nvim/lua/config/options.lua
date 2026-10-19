@@ -27,6 +27,7 @@ opt.listchars = {
   extends = "»",
 }
 opt.termguicolors = true
+opt.colorcolumn = "100"
 opt.signcolumn = "yes"
 opt.ignorecase = true
 opt.smartcase = true

@@ -3,7 +3,10 @@ return {
     "saghen/blink.cmp",
     version = "1.*",
     opts = {
-      keymap = { preset = "default", ["<CR>"] = { "accept", "fallback" } },
+      keymap = {
+        preset = "super-tab",
+        ["<CR>"] = { "accept", "fallback" },
+      },
       completion = { documentation = { auto_show = true } },
       sources = { default = { "lsp", "path", "snippets", "buffer" } },
       fuzzy = { implementation = "prefer_rust_with_warning" },
@@ -18,7 +21,7 @@ return {
       "saghen/blink.cmp",
     },
     opts = {
-      ensure_installed = { "lua_ls", "terraformls", "basedpyright" },
+      ensure_installed = { "lua_ls", "terraformls" },
     },
     config = function(_, opts)
       vim.lsp.config("*", {
@@ -29,13 +32,6 @@ return {
           Lua = {
             diagnostics = { globals = { "vim" } },
             workspace = { library = { vim.env.VIMRUNTIME } },
-          },
-        },
-      })
-      vim.lsp.config("basedpyright", {
-        settings = {
-          basedpyright = {
-            analysis = { typeCheckingMode = "standard" },
           },
         },
       })

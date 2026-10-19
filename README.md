@@ -1,5 +1,14 @@
 # Vim Config
 
+## Requirements
+
+### Neovim
+
+- **`tree-sitter-cli`** (required by `nvim-treesitter` to compile and install parsers):
+  ```bash
+  brew install tree-sitter-cli
+  ```
+
 ## Installation
 
 ```bash
