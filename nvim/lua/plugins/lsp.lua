@@ -35,6 +35,18 @@ return {
           },
         },
       })
+      vim.lsp.config("rust_analyzer", {
+        settings = {
+          ["rust-analyzer"] = {
+            check = {
+              allTargets = false,
+            },
+            cargo = {
+              allTargets = false,
+            },
+          },
+        },
+      })
       require("mason-lspconfig").setup(opts)
       vim.lsp.enable("clangd")
       vim.lsp.enable("rust_analyzer")
