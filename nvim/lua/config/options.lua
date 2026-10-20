@@ -40,6 +40,15 @@ opt.scrolloff = 4
 opt.confirm = true
 opt.clipboard = "unnamedplus"
 
+vim.api.nvim_create_autocmd("BufWritePre", {
+  callback = function()
+    local view = vim.fn.winsaveview()
+    vim.cmd([[keeppatterns %s/\s\+$//e]])
+    vim.fn.winrestview(view)
+  end,
+  desc = "Remove trailing whitespace before saving",
+})
+
 vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
   callback = function()
     vim.schedule(function()

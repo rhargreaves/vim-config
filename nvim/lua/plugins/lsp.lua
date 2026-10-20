@@ -4,8 +4,9 @@ return {
     version = "1.*",
     opts = {
       keymap = {
-        preset = "super-tab",
-        ["<CR>"] = { "accept", "fallback" },
+        preset = "default",
+        ["<CR>"] = { "fallback" },
+        ["<Tab>"] = { "accept", "fallback" },
       },
       completion = { documentation = { auto_show = true } },
       sources = { default = { "lsp", "path", "snippets", "buffer" } },
